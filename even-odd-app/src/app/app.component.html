@@ -1,0 +1,33 @@
+<div class="my-5">
+  <h3>{{ title }}</h3>
+  <form class="row g-3">
+    <div class="col-auto">
+      <label for="inputPassword2" class="visually-hidden">Enter number</label>
+      <input type="text" class="form-control" id="inputPassword2" placeholder="Password" name="number" [(ngModel)]="number" /><br /><br />
+      <label for="exampleColorInput" class="form-label">{{ result }}</label>
+    </div>
+
+    <div class="col-auto">
+      <button type="submit" (click)="evenodd()" class="btn btn-primary mb-3">Check</button>
+    </div>
+
+    <div class="col-auto">
+      <button type="submit" (click)="evenArray()" class="btn btn-primary mb-3">EvenArray</button>
+    </div>
+
+    <div class="col-auto"><button type="submit" (click)="oddArray()" class="btn btn-primary mb-3">OddArray</button>
+    </div>
+
+    <div class="col-auto">
+      <button type="submit" (click)="isPalindrome()" class="btn btn-primary mb-3">isPalindrome</button>
+    </div>
+
+    <div class="col-auto">
+      <button type="submit" (click)="isArmStrong()" class="btn btn-primary mb-3">isArmstrong</button>
+    </div>
+
+    <div class="" *ngFor="let e of elements">
+      <label>{{ e }}</label>
+    </div>
+  </form>
+</div>
