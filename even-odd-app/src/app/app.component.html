@@ -3,7 +3,7 @@
   <form class="row g-3">
     <div class="col-auto">
       <label for="inputPassword2" class="visually-hidden">Enter number</label>
-      <input type="text" class="form-control" id="inputPassword2" placeholder="Password" name="number" [(ngModel)]="number" /><br /><br />
+      <input type="text" class="form-control" id="inputPassword2" placeholder="Password" name="number" [(ngModel)]="number"/><br/><br/>
       <label for="exampleColorInput" class="form-label">{{ result }}</label>
     </div>
 
@@ -23,9 +23,11 @@
     </div>
 
     <div class="col-auto">
-      <button type="submit" (click)="isArmStrong()" class="btn btn-primary mb-3">isArmstrong</button>
+      <button type="submit" (click)="isArmStrong()" class="btn btn-primary mb-3">isArmstrong
+      </button>
     </div>
 
+    <hr />
     <div class="" *ngFor="let e of elements">
       <label>{{ e }}</label>
     </div>
