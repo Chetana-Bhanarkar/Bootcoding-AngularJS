@@ -44,4 +44,6 @@ export class ArrayComponent {
     }
     this.result = "reverse array is  "+array;
   }
+
+  
 }
