@@ -45,5 +45,9 @@ export class ArrayComponent {
     this.result = "reverse array is  "+array;
   }
 
-  
+  sizeOfArray(){
+    let nums = this.elements.split(',').map(Number);
+    let size = nums.length;
+    this.result = "The length of above array is " + size
+  }
 }
