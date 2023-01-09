@@ -1,0 +1,14 @@
+<div>
+  <h3>{{title}}</h3>
+  <p class="mt-5">{{note}}</p>
+  <form class="row g-3">
+    <div class="col-auto">
+      <label for="inputPassword2" class="visually-hidden">Enter array</label>
+      <input type="text" class="form-control" id="inputPassword2" placeholder="Enter array" name="number" [(ngModel)]="elements"/>
+      <label for="">{{result}}</label>
+    </div>
+    <div class="col-auto">
+      <button type="submit" (click)="minArray()" class="btn btn-primary mb-3">minArray</button>
+    </div>
+  </form>
+</div>

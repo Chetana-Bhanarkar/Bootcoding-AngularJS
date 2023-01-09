@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { ArrayComponent } from './pages/array/array.component';
 // import { CheckArrayComponent } from './pages/check-array/check-array.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ArrayComponent,
     // CheckArrayComponent
   ],
   imports: [

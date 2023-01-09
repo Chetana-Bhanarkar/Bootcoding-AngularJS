@@ -1,0 +1,34 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-array',
+  templateUrl: './array.component.html',
+  styleUrls: ['./array.component.css']
+})
+export class ArrayComponent {
+  title = "Performance of array";
+  note  = "Enter the comma separated value"
+  elements!: string;
+  result = "";
+
+  constructor() {
+  }
+
+  minArray() {
+    let nums = this.elements.split(',').map(Number); // array of numbers
+    let min = nums[0];
+    for (let i = 1; i < nums.length; i++) {
+      if (min > nums[i]) {
+        min = nums[i];
+      }
+    }
+    this.result = "min element is" + min;
+  }
+
+  maxArray(){
+    let nums = this.elements.split(",").map(Number);
+    let max = nums[0];
+    
+
+  }
+}
