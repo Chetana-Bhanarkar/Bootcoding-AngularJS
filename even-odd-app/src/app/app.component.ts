@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Numbers program';
 
-  number : number;
+  number !: number;
   result = "";
 
   constructor(){
@@ -89,5 +89,10 @@ export class AppComponent {
     }
 
 
+  }
+  clear(){
+    this.result = ""
+    this.elements = [];
+    this.number = 0;
   }
 }
