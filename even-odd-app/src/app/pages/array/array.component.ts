@@ -50,4 +50,16 @@ export class ArrayComponent {
     let size = nums.length;
     this.result = "The length of above array is " + size
   }
+
+  oddArrayElement(){
+    let array = []
+    let nums = this.elements.split(',').map(Number);
+    for(let i=0;i<nums.length;i++){
+      if(nums[i]%2 != 0){
+        array.push(nums[i]);
+      }
+    }
+    this.result = " "+ array;
+  }
+
 }
