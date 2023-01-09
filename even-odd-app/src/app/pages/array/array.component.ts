@@ -22,13 +22,26 @@ export class ArrayComponent {
         min = nums[i];
       }
     }
-    this.result = "min element is" + min;
+    this.result = "min element is " + min;
   }
 
   maxArray(){
     let nums = this.elements.split(",").map(Number);
     let max = nums[0];
-    
+    for(let i = 1 ; i<nums.length;i++){
+      if(max < nums[i]){
+        max = nums[i];
+      };
+    }
+    this.result = "max element is " + max;
+  }
 
+  reverseArray(){
+    let nums = this.elements.split(",").map(Number);
+    let array = [];
+    for(let i=nums.length;i>=0;i--){
+      array.push(nums[i]);
+    }
+    this.result = "reverse array is  "+array;
   }
 }
