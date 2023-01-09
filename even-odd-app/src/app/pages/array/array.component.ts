@@ -35,4 +35,13 @@ export class ArrayComponent {
     }
     this.result = "max element is " + max;
   }
+
+  reverseArray(){
+    let nums = this.elements.split(",").map(Number);
+    let array = [];
+    for(let i=nums.length;i>=0;i--){
+      array.push(nums[i]);
+    }
+    this.result = "reverse array is  "+array;
+  }
 }
