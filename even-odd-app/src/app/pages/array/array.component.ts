@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ArrayComponent {
   title = "Performance of array";
-  note  = "Enter the comma separated value"
+  note  = "Enter the comma separated value -"
   elements!: string;
   result = "";
 
@@ -36,13 +36,14 @@ export class ArrayComponent {
     this.result = "max element is " + max;
   }
 
+  array :Number[]= [];
+  // odd: boolean = false;
   reverseArray(){
     let nums = this.elements.split(",").map(Number);
-    let array = [];
     for(let i=nums.length;i>=0;i--){
-      array.push(nums[i]);
+      this.array.push(nums[i]);
     }
-    this.result = "reverse array is  "+array;
+    this.result = "reverse array is  "+this.array;
   }
 
   sizeOfArray(){
@@ -52,24 +53,23 @@ export class ArrayComponent {
   }
 
   oddArrayElement(){
-    let array = []
     let nums = this.elements.split(',').map(Number);
     for(let i=0;i<nums.length;i++){
       if(nums[i]%2 != 0){
-        array.push(nums[i]);
+        this.array.push(nums[i]);
       }
     }
-    this.result = "Odd element is "+ array;
+    this.result = "Odd element is "+ this.array;
+    // this.odd = true;
   }
   evenArrayElement(){
-    let array = []
     let nums = this.elements.split(',').map(Number);
     for(let i=0;i<nums.length;i++){
       if(nums[i]%2 == 0){
-        array.push(nums[i]);
+        this.array.push(nums[i]);
       }
     }
-    this.result = "Even element is "+ array;
+    this.result = "Even element is "+ this.array;
   }
 
   clear(){

@@ -1,17 +1,19 @@
 <div>
   <h3>{{title}}</h3>
-  <p class="mt-5">{{note}}</p>
+  <p class="mt-5 fst-italic">{{note}}</p>
   <form class="row g-3">
     <div class="col-auto">
       <label for="inputPassword2" class="visually-hidden">Enter array</label>
-      <input type="text" class="form-control" id="inputPassword2" placeholder="Enter array" name="number" [(ngModel)]="elements"/>
+      <input type="text" class="form-control" id="inputPassword2" placeholder="Enter array" name="number"
+        [(ngModel)]="elements" />
       <label for="">{{result}}</label>
+
     </div>
     <div class="col-auto">
-      <button type="submit" (click)="minArray()" class="btn btn-primary mb-3">minArray</button>
+      <button type="submit" (click)="minArray()" class="btn btn-primary mb-3">min Element</button>
     </div>
     <div class="col-auto">
-      <button type="submit" (click)="maxArray()" class="btn btn-primary mb-3">maxArray</button>
+      <button type="submit" (click)="maxArray()" class="btn btn-primary mb-3">max Element</button>
     </div>
     <div class="col-auto">
       <button type="submit" (click)="reverseArray()" class="btn btn-primary mb-3">reverseArray</button>
@@ -28,5 +30,15 @@
     <div class="col-auto">
       <button type="submit" (click)="clear()" class="btn btn-primary mb-3">clear</button>
     </div>
+
+
+    <div class="container ">
+      <div class="col-auto" *ngFor="let item of array">
+        <div class="row">
+          <span class=" box col-1 text-center border border-dark">{{item}}</span>
+        </div>
+      </div>
+    </div>
   </form>
 </div>
+
