@@ -6,7 +6,7 @@
       <label for="inputPassword2" class="visually-hidden">Enter array</label>
       <input type="text" class="form-control" id="inputPassword2" placeholder="Enter array" name="number"
         [(ngModel)]="elements" />
-      <label for="">{{result}}</label>
+      <label for="" class="fst-italic mt-3 text-center fw-bold">{{result}}</label>
 
     </div>
     <div class="col-auto">
@@ -32,10 +32,10 @@
     </div>
 
 
-    <div class="container ">
-      <div class="" *ngFor="let item of array">
+    <div class="container mt-4">
+      <span class="p-3 m-3 text-dark border-dark border fw-bold" style="background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);" *ngFor="let item of array">
           <span>{{item}}</span>
-      </div>
+      </span>
     </div>
   </form>
 </div>

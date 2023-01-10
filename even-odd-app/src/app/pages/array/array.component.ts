@@ -26,7 +26,7 @@ export class ArrayComponent {
         min = nums[i];
       }
     }
-    this.result = "min element is " + min;
+    this.result = "Minimum element is " + min;
   }
 
   maxArray(){
@@ -39,7 +39,7 @@ export class ArrayComponent {
         max = nums[i];
       };
     }
-    this.result = "max element is " + max;
+    this.result = "Maximum element is " + max;
   }
 
   // odd: boolean = false;
