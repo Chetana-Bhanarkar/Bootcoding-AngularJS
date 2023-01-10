@@ -16,7 +16,16 @@ export class ArrayComponent {
   constructor() {
   }
 
-  minArray(): void {
+  Array(){
+    this.array = []
+    this.result = ""
+    let nums = this.elements.split(",").map(Number);
+    for(let i=0;i<nums.length;i++){
+      this.array.push(nums[i]);
+    }
+  }
+
+  minArray(){
     this.result = ""
     this.array= []
     let nums = this.elements.split(',').map(Number); // array of numbers
