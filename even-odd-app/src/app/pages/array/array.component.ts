@@ -42,7 +42,7 @@ export class ArrayComponent {
     this.result = "Maximum element is " + max;
   }
 
-  
+
   reverseArray(){
     this.array = []
     this.result = ""
@@ -50,7 +50,7 @@ export class ArrayComponent {
     for(let i=nums.length-1;i>=0;i--){
       this.array.push(nums[i]);
     }
-    // this.result = "reverse array is  "+this.array;
+
   }
 
   sizeOfArray(){
