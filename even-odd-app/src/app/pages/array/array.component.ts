@@ -80,7 +80,6 @@ export class ArrayComponent {
         this.array.push(nums[i]);
       }
     }
-    // this.result = "Even element is "+ this.array;
   }
 
   clear(){
