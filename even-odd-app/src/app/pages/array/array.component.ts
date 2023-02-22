@@ -42,7 +42,7 @@ export class ArrayComponent {
     this.result = "Maximum element is " + max;
   }
 
-  // odd: boolean = false;
+  
   reverseArray(){
     this.array = []
     this.result = ""
