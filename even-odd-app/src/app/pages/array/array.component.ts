@@ -70,8 +70,6 @@ export class ArrayComponent {
         this.array.push(nums[i]);
       }
     }
-    // this.result = "Odd element is "+ this.array;
-    // this.odd = true;
   }
   evenArrayElement(){
     this.array= []
