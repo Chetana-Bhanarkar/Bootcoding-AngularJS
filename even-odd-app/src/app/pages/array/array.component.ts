@@ -16,15 +16,6 @@ export class ArrayComponent {
   constructor() {
   }
 
-  // Array(){
-  //   this.array = []
-  //   this.result = ""
-  //   let nums = this.elements.split(",").map(Number);
-  //   for(let i=0;i<nums.length;i++){
-  //     this.array.push(nums[i]);
-  //   }
-  // }
-
   minArray(){
     this.result = ""
     this.array= []
