@@ -1,0 +1,22 @@
+{
+  "seller": [
+    {
+      "name": "chetana",
+      "email": "chetana@gmail.com",
+      "password": "chetana",
+      "id": 1
+    },
+    {
+      "name": "akash",
+      "email": "akash@gmail.com",
+      "password": "akash",
+      "id": 2
+    },
+    {
+      "name": "chiu",
+      "email": "chiu@gmail.com",
+      "password": "chiu",
+      "id": 3
+    }
+  ]
+}
