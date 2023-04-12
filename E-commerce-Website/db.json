@@ -17,6 +17,12 @@
       "email": "chiu@gmail.com",
       "password": "chiu",
       "id": 3
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "test",
+      "id": 4
     }
   ]
 }
