@@ -1,15 +1,20 @@
 import { Injectable, inject } from '@angular/core';
 import { ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
-import { CanActivate } from '../../../src/app/authGuard_interface'
+import { CanActivate } from './authGuard_interface'
+import { SellerService } from '../service/seller.service';
 @Injectable({
   providedIn: 'root'
 })
 export class AuthGuard implements CanActivate {
+  constructor(private sellerService: SellerService) { }
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return false;
+    if (localStorage.getItem('seller')) {
+      return true
+    }
+    return this.sellerService.isSellerLoggedIn;
   }
 
 
